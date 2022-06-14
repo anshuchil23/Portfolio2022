@@ -83,7 +83,7 @@ var makeNavigation = function() {
       var link = 'characters.html?' + record.fields.Slug + '-' + record.id;
       anchor.setAttribute('href', link);
       anchor.setAttribute("class", "navigation-name");
-      anchor.innerHTML = record.fields.Name;
+      anchor.innerHTML = record.fields.Tagline;
 
 
       if (record.fields.FaceImage && record.fields.FaceImage.length > 0) {

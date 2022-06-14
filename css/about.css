@@ -1,3 +1,4 @@
+
 body{
     overflow-x: hidden;
     overflow-y: auto;
@@ -5,48 +6,81 @@ body{
     margin-left:15%;
 
 }
-.me{
-    margin-top:2rem;
-    margin-left:7rem;
-    margin-right:7rem;
-    padding:3rem;
-    background-color: black;
-}
 
 .navbar-menu{
-    font-size: 3rem;
-    font-family: balboa-plus-fill, sans-serif;
-    font-weight: 400;   
-    font-style: normal;
     margin:none;
-    padding:10px;
-    overflow:auto;
+    padding:none;
+    overflow:none;
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
+    position:fixed;
+    background-color: white;
+    mix-blend-mode: screen;
+    z-index:4;
 }
 
+.banner{
+    width:10rem;
+    height:10rem;
+    transition: all 0.15s ease-in;
+}
+
+.banner:hover{
+    transform: translateY(2rem);
+    transform: rotate(7deg);
+}
+
+
 .navbar-menu a{
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size: 4rem;
+    font-family: balboa-plus-fill, sans-serif; 
+    font-weight: 400;   
+    font-style: normal;
+    padding:0rem;
     text-align: center;
     flex-grow: 1;
     text-decoration: none;
-    color: #474747;
-    /* color: #fffcf2; */
     color: transparent;
-    -webkit-text-stroke-width: 1.5px; 
-    -webkit-text-stroke-color:#474747;
-    transition: all 0.3s ease-in;
+    border-style:solid;
+    border-color:#202020;
+    border-width:0.1rem;
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+    -webkit-text-stroke-width: 1.2px; 
+    -webkit-text-stroke-color:#202020;
+    transition: all 0.1s ease-in-out;
 }
 
 .navbar-menu a:hover{
-    transform: translateY(-5px);
-    color: #474747;
+    opacity:1;
+    color: #202020;
+    -webkit-text-stroke-width: 0.5px; 
 }
 
      /* HOVER ANIMATIONS FOR NAVBAR */
 
 .navbar-menu .current{
-    -webkit-text-stroke-width: 0px; 
     color: #474747;
+    -webkit-text-stroke-width: 0px; 
+}
+
+.navbar-menu h1{
+    font-size: 1rem;
+    font-family: rig-shaded-bold-face, sans-serif;
+    font-weight: 400;   
+    font-style: normal;
+    margin:none;
+    padding:none;
+    text-align: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #202020;
+    -webkit-text-stroke-width: 1.5px; 
+    -webkit-text-stroke-color:#474747;
+    transition: all 0.15s ease-in;
 }
 .contact{
     margin-left: 50%;
@@ -74,25 +108,19 @@ body{
 }
 
 .me{
-    padding:none;
-    margin:0.2rem;
+    margin-top:7rem;
+    margin-bottom:7rem;
     display:flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
+    justify-content: space-between;
 }
 
 .me .content{
-    padding-left:1.5rem;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    height:100vh;
-    
-}
-
-.me img{
-    height:40rem;
-  
+    padding-left:10rem;
 }
 
 .me .content .pic{
@@ -102,6 +130,13 @@ body{
     padding-left:0px;
     padding-right:0px;
     flex-grow: 2;
+}
+
+.me img{
+    height:30rem;  
+    margin-left:auto;
+    margin-right:70vw;
+    z-index:1;
 }
 
 .pic img{
@@ -116,19 +151,20 @@ body{
     z-index:-1;
 }
  p{
-    font-family: 'Source Code Pro', monospace;
-    word-wrap: break-word;
+    margin-right:70vw;
+    font-family: rig-shaded-light-face, sans-serif;
     text-align: left ;
     font-size:1rem;
-    color: white;
+    font-weight:4000;
+    color: #202020;
  }
 
  .bold{
     word-wrap: break-word;
+    font-family: rig-shaded-bold-face, sans-serif;
  }
 
  .banner{
-
      color:transparent;
      width:7rem;
      height:7rem;
@@ -137,67 +173,84 @@ body{
  .banner:hover{
     transition: all 0.2s ease-in-out;
 }
-.banner img{
-
-}
-
-
-footer{
+.see-things{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    position:fixed;
+    top:0;
+    right:0; 
+    padding:5rem;
 }
 
 .my-work{
-    flex-grow: 1;
-    font-size: 3rem;
+    padding:0.2rem;
+    font-size: 5rem;
     font-family: balboa-plus-fill, sans-serif;
-    font-weight: 400;   
-    font-style: normal;
-    margin:none;
-    padding:0px;
-    text-align: center;
+    font-weight: 400;
+    text-align: right;
+    flex-grow: 1;
     text-decoration: none;
+    color: #474747;
     color: transparent;
-    -webkit-text-stroke-width: 1.5px; 
+    -webkit-text-stroke-width: 1.2px; 
     -webkit-text-stroke-color:#474747;
-    transition: all 0.1s ease-in;
+    transition: all 0.15s ease-in-out;
 }
 
 .my-work:hover{
-    transform: translateY(-5px);
-    color: #474747;
- -webkit-text-stroke-width: 0.2px; 
-
+    color: #202020;
+    -webkit-text-stroke-color:transparent;
 }
 
 .links{
-    flex-grow:1;
-    mix-blend-mode: exclusion;
+    display:flex;
+    flex-direction:column;
     transition: all 0.1s ease-in-out;
-    z-index:4;
-}
-.links a:hover{
-    padding:1.2rem;
-    -webkit-text-stroke-color: transparent;
-    color: #000000;
-    transform:translateY(-2rem);
+    position:fixed;
+    justify-content: space-around;
+    top:0;
+    left:0;
+    margin-top:40vh;
 }
 
 .links a{
-    padding-left:0.8rem;
-    padding-right:0.8rem;
-    font-size: 3rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    padding:1.2rem;
+    font-size: 1.2rem;
     font-family: balboa-plus-fill, sans-serif;
     font-weight: 400;   
     font-style: normal;
     text-decoration: none;
     text-align: center;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: #202020;
+    border-style:solid;
+    border-width: 0.1rem;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+    transition: all 0.15s ease-in-out;
 }
 
-
-
-.fa{
-    padding:0.8rem;
+.email{
+    margin:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:2rem;
+    font-size: 1.5rem;
+    font-weight: 400;   
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #202020;
 }
+.links a:hover{
+    -webkit-text-stroke-color: transparent;
+    color: #000000;
+    border-style:dashed;
+    border-width: 0.15rem;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
