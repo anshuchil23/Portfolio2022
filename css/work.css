@@ -127,13 +127,14 @@ body{
 
 .content p{
     font-family: rig-shaded-light-face, sans-serif;
-    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
     font-weight: 300;   
     font-style: normal;
     text-align: right;
     position:fixed;
     margin-top:2vh;
-    margin-right:10vw;
+    margin-right:25vw;
     padding:1.2rem;
     top:0;
     right:0;
