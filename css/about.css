@@ -57,16 +57,7 @@ body{
 
 
 .navbar-menu a{
-    margin-top:auto;
-    margin-bottom:auto;
-    font-size: 4rem;
-    font-family: balboa-plus-fill, sans-serif; 
-    font-weight: 400;   
-    font-style: normal;
-    padding:0rem;
-    text-align: center;
-    flex-grow: 1;
-    text-decoration: none;
+    margin-top:2rem;
     color: transparent;
     border-style:solid;
     border-color:#202020;
@@ -131,7 +122,6 @@ body{
 }
 
 .me{
-    margin-top:7rem;
     margin-bottom:7rem;
     display:flex;
     flex-direction: row;
@@ -143,36 +133,32 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left:10rem;
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-left:none;
+    border-width:1.4px;
+    margin-left:7rem;
+    margin-top:2rem;
+    padding:2rem;
+    padding-left:2rem;
 }
 
-.me .content .pic{
-    flex-grow: 1;
-}
-.me .pic{
-    padding-left:0px;
-    padding-right:0px;
-    flex-grow: 2;
-}
 
 .me img{
     height:30rem;  
     margin-left:auto;
     margin-right:70vw;
     z-index:1;
+    padding-bottom:3rem;
+    border-style:solid;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-width:1.4px;
+
 }
 
-.pic img{
-    height:30vh;
-    align-self: center;
-    margin-top:none;
-    position:fixed;
-    top:0;
-    margin-left:25vw;
-    mix-blend-mode: color-burn;
-    -webkit-filter: blur(3px);  
-    z-index:-1;
-}
  p{
     margin-right:70vw;
     font-family: rig-shaded-light-face, sans-serif;
@@ -232,13 +218,12 @@ body{
     top:0;
     right:0;
     margin-top:55vh;
-    margin-right: 17rem;
-    padding:1.2rem;
-    
+    margin-right: 19rem;
 }
 
 .links a{
-    padding:1.2rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
     font-size: 1.2rem;
     font-family: balboa-plus-fill, sans-serif;
     line-height: 0.1rem;
@@ -248,12 +233,17 @@ body{
     text-align: left;
     color: #202020;
     transition: all 0.15s ease-in-out;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+    border-color:transparent;
+    border-width:1.4px;
 }
 
 .email{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 0.1rem;
-    padding:1.2rem;
     font-size: 1.2rem;
     font-weight: 400;   
     font-style: normal;
@@ -263,11 +253,6 @@ body{
 }
 .links a:hover{
     -webkit-text-stroke-color: transparent;
-    color: #000000;
-    border-style:dashed;
-    border-width: 0.15rem;
-    border-bottom:none;
-    border-right:none;
-    border-left:none;
+    border-color: #000000;
 }
 

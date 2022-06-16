@@ -33,14 +33,13 @@ body{
 .navbar-menu{
     margin-right:52vw;
     margin:none;
-    padding-top:4rem;
     overflow:none;
     display: flex;
 }
 
 .banner{
     color:transparent;
-    width:10rem;
+    width:10vw;
     mix-blend-mode:multiply;
     transition: all 0.15s ease-in;
     margin-right:30vw;
@@ -70,18 +69,17 @@ body{
     -webkit-text-stroke-width: 1.2px; 
     -webkit-text-stroke-color:#202020;
     transition: all 0.05s ease-in-out;
+    border-style:solid;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1.4px;
 }
 
 .navbar-menu a:hover{
-    opacity:1;
     color: #202020;
     -webkit-text-stroke-color:transparent;
     -webkit-text-stroke-width: 0px; 
-    border-style:solid;
-    border-top:none;
-    border-bottom:none;
-    border-right:none;
-    border-width:1.4px;
 }
 
 .navbar-menu .current{
@@ -89,6 +87,20 @@ body{
     -webkit-text-stroke-width: 0px; 
 
 }
+
+.navbar-menu p{
+    font-family: rig-shaded-light-face, sans-serif;
+    letter-spacing: 0.001rem;
+    font-size: 1.6rem;
+    font-weight: 300;   
+    position:fixed;
+    top:0;
+    right:0;
+    margin-right:15vw;
+    margin-top:11.5rem;
+    font-style: normal;
+    text-align: center;
+ }
 .content{
     display:flex;
     flex-direction: row;
@@ -122,21 +134,6 @@ body{
  
  .left-content a:hover{
      color:#202020;
- }
-
-
-.navbar-menu p{
-    font-family: rig-shaded-light-face, sans-serif;
-    letter-spacing: 0.001rem;
-    font-size: 2rem;
-    font-weight: 300;   
-    position:fixed;
-    top:0;
-    right:0;
-    margin-right:15vw;
-    margin-top:12rem;
-    font-style: normal;
-    text-align: center;
  }
 
 footer{
