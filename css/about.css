@@ -1,4 +1,27 @@
 
+html{
+    scrollbar-color: #202020 transparent;
+    scrollbar-width: 5rem;
+    background-color: rgb(250, 250, 255);
+
+}
+
+html::-webkit-scrollbar {
+    width:5px;
+    background-color: rgb(250, 250, 255);
+    z-index:4;
+  }
+
+html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(250, 250, 255);
+  }
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color:#202020;
+  }
+
 body{
     overflow-x: hidden;
     overflow-y: auto;
@@ -76,12 +99,10 @@ body{
     font-style: normal;
     margin:none;
     padding:none;
-    text-align: center;
+    text-align: right;
     flex-grow: 1;
     text-decoration: none;
     color: #202020;
-    -webkit-text-stroke-width: 1.5px; 
-    -webkit-text-stroke-color:#474747;
     transition: all 0.15s ease-in;
 }
 .contact{
@@ -173,15 +194,16 @@ body{
     position:fixed;
     top:0;
     right:0; 
-    padding:5rem;
 }
 
 .my-work{
-    padding:0.2rem;
+    width:20rem;
+    margin-top:3rem;
+    margin-right:13rem;
     font-size: 5rem;
     font-family: balboa-plus-fill, sans-serif;
     font-weight: 400;
-    text-align: right;
+    text-align: left;
     flex-grow: 1;
     text-decoration: none;
     color: #474747;
@@ -194,6 +216,11 @@ body{
 .my-work:hover{
     color: #202020;
     -webkit-text-stroke-color:transparent;
+    border-style:solid;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    border-width:1.4px;
 }
 
 .links{
@@ -203,35 +230,31 @@ body{
     position:fixed;
     justify-content: space-around;
     top:0;
-    left:0;
-    margin-top:40vh;
-    padding:2rem;
+    right:0;
+    margin-top:55vh;
+    margin-right: 17rem;
+    padding:1.2rem;
+    
 }
 
 .links a{
-    margin-left:2rem;
-    margin-right:2rem;
     padding:1.2rem;
     font-size: 1.2rem;
     font-family: balboa-plus-fill, sans-serif;
+    line-height: 0.1rem;
     font-weight: 400;   
     font-style: normal;
     text-decoration: none;
     text-align: left;
     color: #202020;
-    border-style:solid;
-    border-width: 0.1rem;
-    border-bottom:none;
-    border-right:none;
-    border-left:none;
     transition: all 0.15s ease-in-out;
 }
 
 .email{
-    margin:none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding:2rem;
-    font-size: 1.5rem;
+    line-height: 0.1rem;
+    padding:1.2rem;
+    font-size: 1.2rem;
     font-weight: 400;   
     font-style: normal;
     text-decoration: none;

@@ -1,20 +1,41 @@
+html{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    scrollbar-color: #202020 transparent;
+    scrollbar-width: 5rem;
+    background-color: rgb(250, 250, 255);
+
+}
+
+html::-webkit-scrollbar {
+    width:5px;
+    background-color: rgb(250, 250, 255);
+    z-index:4;
+  }
+
+html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(250, 250, 255);
+  }
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color:#202020;
+  }
 body{
     overflow-x: hidden;
     overflow-y: auto;
     margin-right:15%;
     margin-left:15%;
     background-color: rgb(250, 250, 255);
-
 }
 
 .navbar-menu{
-    margin-right:50vw;
+    margin-right:52vw;
     margin:none;
     padding-top:4rem;
     overflow:none;
     display: flex;
-    flex-direction:row;
-    justify-content: space-around;
 }
 
 .banner{
@@ -22,8 +43,8 @@ body{
     width:10rem;
     mix-blend-mode:multiply;
     transition: all 0.15s ease-in;
-    margin-right:15rem;
-    margin-top:3rem;
+    margin-right:30vw;
+    margin-top:5rem;
     position:fixed;
     top:0;
     right:0;
@@ -36,62 +57,59 @@ body{
 
 
 .navbar-menu a{
-    font-size: 5rem;
+    padding-top:1rem;
+    padding-left:0.4rem;
+    font-size: 4rem;
     font-family: balboa-plus-fill, sans-serif; 
     font-weight: 400;   
     font-style: normal;
-    text-align: left;
+    text-align:center;
     flex-grow: 1;
     text-decoration: none;
     color: transparent;
     -webkit-text-stroke-width: 1.2px; 
     -webkit-text-stroke-color:#202020;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.05s ease-in-out;
 }
 
 .navbar-menu a:hover{
     opacity:1;
     color: #202020;
-    -webkit-text-stroke-width: 0.5px; 
+    -webkit-text-stroke-color:transparent;
+    -webkit-text-stroke-width: 0px; 
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+    border-width:1.4px;
 }
-
-     /* HOVER ANIMATIONS FOR NAVBAR */
 
 .navbar-menu .current{
     color: #474747;
     -webkit-text-stroke-width: 0px; 
 
 }
-
-.navbar-menu h1{
-    font-size: 1rem;
-    font-family: rig-shaded-bold-face, sans-serif;
-    font-weight: 400;   
-    font-style: normal;
-    margin:none;
-    padding:none;
-    text-align: center;
-    flex-grow: 1;
-    text-decoration: none;
-    color: #202020;
-    /* color: #fffcf2; */
-    -webkit-text-stroke-width: 1.5px; 
-    -webkit-text-stroke-color:#474747;
-    transition: all 0.15s ease-in;
-}
-
 .content{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: #202020;
     letter-spacing: -0.2rem;
-    height:50vh;
+    margin-top:10vh;
 }
 
  .left-content{
      display:flex;
      flex-direction: column;
+     line-height:0.5rem;
+     height:24rem;
+     border-style:solid;
+     border-bottom:none;
+     border-left:none;
+     border-top:none;
+     border-width:1.4px;
+     padding:1.2rem;
+     
  }
 
  .left-content h1{
@@ -99,47 +117,26 @@ body{
     font-weight: 2000;
     font-size: 4rem;
     font-style: normal;
-    text-align:center;
+    text-align:left;
  }
-
- .left-content a{
-    color:transparent;
-    font-size:6rem;
-    padding:0.7rem;
-    font-family:rig-shaded-bold-face, sans-serif;
-    font-style: normal;
-    text-align: left; 
-    text-decoration: none;
-    letter-spacing: -0.5rem;
-    transition: all 0.1s ease-out;
-    -webkit-text-stroke-width: 1.4px;
-    -webkit-text-stroke-color:rgb(0, 0, 0);
- }
-
+ 
  .left-content a:hover{
      color:#202020;
  }
 
 
-.line{
-    width:100;
-    height:100;
-    align-self: center;
-}
-
-.content p{
+.navbar-menu p{
     font-family: rig-shaded-light-face, sans-serif;
-    letter-spacing: 0.1rem;
-    font-size: 1.3rem;
+    letter-spacing: 0.001rem;
+    font-size: 2rem;
     font-weight: 300;   
-    font-style: normal;
-    text-align: right;
     position:fixed;
-    margin-top:2vh;
-    margin-right:25vw;
-    padding:1.2rem;
     top:0;
     right:0;
+    margin-right:15vw;
+    margin-top:12rem;
+    font-style: normal;
+    text-align: center;
  }
 
 footer{
@@ -158,11 +155,6 @@ footer{
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-    border-style:solid;
-    border-bottom:none;
-    border-right:none;
-    border-left:none;
-    border-width: 1.4px;
 }
 
 .work-categories a{
