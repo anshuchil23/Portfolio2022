@@ -3,22 +3,23 @@ html{
     overflow-x:hidden;
     scrollbar-color: #202020 transparent;
     scrollbar-width: 5rem;
+    background-color: rgb(250, 250, 255);
+
 }
 
 html::-webkit-scrollbar {
     width:5px;
-    color:white;
+    background-color: rgb(250, 250, 255);
     z-index:4;
   }
 
 html::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: rgb(250, 250, 255);
   }
 
 html::-webkit-scrollbar-thumb{
     border-radius: 100px;
-
     background-color:#202020;
   }
   
@@ -46,7 +47,8 @@ body{
     left:0%;
     right:0%;
     z-index:3;
-    background-color: rgb(255, 255, 255,10);
+    background-color: rgb(250, 250, 255);
+
 }
 
 .banner{
@@ -97,6 +99,8 @@ body{
     position:fixed;
     top:0;
     left:0;
+    opacity:0.85;
+
 }
 
 .my-work a{
@@ -321,10 +325,6 @@ main{
     width:25rem;
  } 
 
- 
-.main-pictures img:hover{
-    opacity: 0.6;
-}  
 
 
  /* The Modal (background) */

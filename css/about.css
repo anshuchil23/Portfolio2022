@@ -4,6 +4,8 @@ body{
     overflow-y: auto;
     margin-right:15%;
     margin-left:15%;
+    background-color: rgb(250, 250, 255);
+
 
 }
 
@@ -14,15 +16,15 @@ body{
     display: flex;
     flex-direction:column;
     position:fixed;
-    background-color: white;
-    mix-blend-mode: screen;
+    background-color: rgb(250, 250, 255);
     z-index:4;
 }
 
 .banner{
-    width:10rem;
-    height:10rem;
+    width:7rem;
+    height:7rem;
     transition: all 0.15s ease-in;
+    color:transparent;
 }
 
 .banner:hover{
@@ -164,15 +166,6 @@ body{
     font-family: rig-shaded-bold-face, sans-serif;
  }
 
- .banner{
-     color:transparent;
-     width:7rem;
-     height:7rem;
- }
-
- .banner:hover{
-    transition: all 0.2s ease-in-out;
-}
 .see-things{
     display:flex;
     flex-direction: column;
