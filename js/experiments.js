@@ -59,6 +59,7 @@ base('Experiments').find(recordID, function(err, record) {
     var anchor = document.createElement('a');
     var link = 'process.html?' + record.fields.Slug + '-' + record.id;
     anchor.setAttribute('href', link);
+    anchor.setAttribute('target', "_blank");
     anchor.innerHTML = "<" + link + ">" + "Process";
     processLink.appendChild(anchor);
 

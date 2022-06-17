@@ -61,7 +61,7 @@ body{
     color: transparent;
     border-style:solid;
     border-color:#202020;
-    border-width:0.1rem;
+    border-width:1.4px;
     border-left:none;
     border-top:none;
     border-bottom:none;
@@ -139,7 +139,7 @@ body{
     border-left:none;
     border-width:1.4px;
     margin-left:7rem;
-    margin-top:2rem;
+    margin-top:5rem;
     padding:2rem;
     padding-left:2rem;
 }
@@ -151,6 +151,7 @@ body{
     margin-right:70vw;
     z-index:1;
     padding-bottom:3rem;
+    padding-top:5rem;
     border-style:solid;
     border-left:none;
     border-right:none;
@@ -197,16 +198,16 @@ body{
     -webkit-text-stroke-width: 1.2px; 
     -webkit-text-stroke-color:#474747;
     transition: all 0.15s ease-in-out;
+    border-style:solid;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    border-width:4.5px;
 }
 
 .my-work:hover{
     color: #202020;
     -webkit-text-stroke-color:transparent;
-    border-style:solid;
-    border-left:none;
-    border-top:none;
-    border-right:none;
-    border-width:1.4px;
 }
 
 .links{
@@ -253,6 +254,6 @@ body{
 }
 .links a:hover{
     -webkit-text-stroke-color: transparent;
-    border-color: #000000;
+    border-color: #202020;
 }
 
