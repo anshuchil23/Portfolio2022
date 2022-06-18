@@ -64,8 +64,6 @@ base('Illustration').find(recordID, function(err, record) {
           // Get the image and insert it inside the modal - use its "alt" text as a caption
           var modalImg = document.getElementById("img01");
           var captionText = document.getElementById("caption");
-          var modalImg = document.getElementById("img01");
-          var captionText = document.getElementById("caption");
 
   
     record.fields.MainPictures.forEach(function(attachment) {
@@ -76,20 +74,13 @@ base('Illustration').find(recordID, function(err, record) {
       mainPictures.appendChild(image);
       img = document.getElementById("myImg");
       
-      img.addEventListener('click', function (){
+      image.addEventListener('click', function (){
         img = document.getElementById("myImg");
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-      
       })
     });
-
-    /*img.forEach(function(select){
-      img.addEventListener('click', function(){
-        
-      })
-    });*/
 
       img.onclick = function(){
 
