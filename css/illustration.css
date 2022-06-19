@@ -333,19 +333,16 @@ main{
  /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    flex-direction: column;
-    margin-left:7vw;
+    padding-top:3rem;
+    padding-bottom:3rem;
     position: fixed; /* Stay in place */
     top:0;
-    left:0;
     right:0;
     z-index: 4; /* Sit on top */
-    padding-top: 50%; /* Location of the box */
-    padding-bottom:50%;
     width: 100vw; /* Full width */
     height: 100vh; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(250,250,255); /* Black w/ opacity */
+    background-color: rgb(5,5,0,0.98); /* Black w/ opacity */
     border-left: solid 2.5px #202020;
   }
 
@@ -356,12 +353,11 @@ main{
 
  /* Modal Content (image) */
 .modal-content {
-    margin-top:auto;
-    margin-left:6rem;
+    margin-left:auto;
     margin-right:auto;
     display: block; 
     max-width:65vw;
-    max-height:90vh;
+    max-height:80vh;
     overflow: hidden;
   }
   
@@ -391,11 +387,8 @@ main{
   
   /* The Close Button */
   .close {
-    position: absolute;
-    top: 60vh;
-    left: 6vw;
-    padding:0.3rem;
-    color: #202020;
+    padding:5rem;
+    color: rgb(250,250,255);
     font-size: 3rem;
     font-weight: bold;
     transition: 0.3s;
