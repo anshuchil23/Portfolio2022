@@ -82,10 +82,6 @@ base('Illustration').find(recordID, function(err, record) {
       })
     });
 
-      img.onclick = function(){
-
-      }
-
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 

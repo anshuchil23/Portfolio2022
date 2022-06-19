@@ -315,7 +315,7 @@ main{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: right;
     z-index:1;
 } 
 
@@ -354,7 +354,7 @@ main{
  /* Modal Content (image) */
 .modal-content {
     margin-left:auto;
-    margin-right:auto;
+    margin-right:10rem;
     display: block; 
     max-width:65vw;
     max-height:80vh;
