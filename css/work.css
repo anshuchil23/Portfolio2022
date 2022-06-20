@@ -57,12 +57,11 @@ body{
 
 .navbar-menu a{
     padding-top:1rem;
-    padding-left:0.4rem;
     font-size: 4rem;
     font-family: balboa-plus-fill, sans-serif; 
     font-weight: 400;   
     font-style: normal;
-    text-align:center;
+    text-align:left;
     flex-grow: 1;
     text-decoration: none;
     color: transparent;
@@ -74,6 +73,8 @@ body{
     border-left:none;
     border-right:none;
     border-width:4.5px;
+    position:fixed;
+    margin-left:13vw;
 }
 
 .navbar-menu a:hover{
@@ -107,7 +108,7 @@ body{
     flex-wrap: wrap;
     color: #202020;
     letter-spacing: -0.2rem;
-    margin-top:10vh;
+    margin-top:30vh;
 }
 
  .left-content{
@@ -115,11 +116,6 @@ body{
      flex-direction: column;
      line-height:0.5rem;
      height:24rem;
-     border-style:solid;
-     border-bottom:none;
-     border-left:none;
-     border-top:none;
-     border-width:1.4px;
      padding:1.2rem;
      
  }
@@ -152,6 +148,11 @@ footer{
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+    border-style:solid;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    border-width:1.4px;
 }
 
 .work-categories a{

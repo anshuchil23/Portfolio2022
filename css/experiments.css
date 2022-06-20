@@ -65,15 +65,12 @@ body{
 
 .navbar-menu a{
     text-align: left;
-    flex-grow: 1;
     text-decoration: none;
     color: #202020;
     color: transparent;
     -webkit-text-stroke-width: 1.2px; 
     -webkit-text-stroke-color:#202020;
     transition: all 0.1s ease-in-out;
-    padding-left:0.8rem;
-    padding-right:0.8rem;
 }
 
 .navbar-menu a:hover{
@@ -85,6 +82,14 @@ body{
 .navbar-menu .current{
     color: #202020;
     -webkit-text-stroke-width: 0px; 
+    padding:0.8rem;
+    border-bottom:solid #202020 1.4px;
+    margin-bottom:0.2rem;
+    margin-left:30vw;
+}
+
+.navbar-menu .current:hover{
+    margin-bottom:0.8rem;
 }
 
 .my-work{
@@ -467,28 +472,28 @@ main{
 
 
 .process-link{
-    margin-top:85vh;
-    margin-left:7vw;
-    z-index: 0;
-    transition: all 0.1s ease-in-out;
-    position:fixed;
-    top:0;
-    left:0;   
+    margin-top:4rem;
 }
 
 .process-link a{
-    padding:1.2rem;
-    font-size: 3rem;
+    padding-left:7rem;
+    font-size: 5rem;
     font-family: balboa-plus-fill, sans-serif;
     font-weight: 400;   
     font-style: normal;
-    text-align: right;
     text-decoration: none;
+    text-align:right;
     color: transparent;
     -webkit-text-stroke-width: 0.07rem; 
     -webkit-text-stroke-color:#202020;
+    border-style:solid;
+    border-top:none;
+    border-left:none;
+    border-bottom:none;
+    border-width:4.5px;
     transition: all 0.3s ease-in-out;
 }
+
 
 
 .process-link a:hover{
